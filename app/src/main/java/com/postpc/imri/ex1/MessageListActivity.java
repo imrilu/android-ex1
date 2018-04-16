@@ -105,7 +105,7 @@ public class MessageListActivity extends AppCompatActivity {
                 ChatMessage msg = new ChatMessage(singleMessage);
                 output.add(msg);
             } catch (Exception e) {
-                System.out.println(e.getMessage());
+                Log.e("MessageListActivity", e.getMessage());
             }
         }
         return output;
